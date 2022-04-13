@@ -36,4 +36,28 @@ class LoginViewController: UIViewController {
     @objc func didTapOnScroll() {
         view.endEditing(true)
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+       
+        
+        let result = checkUserCredentials()
+        if !result {
+            showResalt()
+        }
+        
+        return result
+    }
+    
+    func checkUserCredentials() -> Bool {
+       return loginTextField.text == "" && passwordTextField.text == ""
+    }
+    
+    func showResalt() {
+        let alert = UIAlertController(title: "Error", message: "Wrong login or password.", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
 }

@@ -93,7 +93,7 @@
             <objects>
                 <tableViewController id="HiJ-mr-vGw" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="vRC-dr-GfK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -165,7 +165,7 @@
             <objects>
                 <collectionViewController id="UJ7-XO-c9M" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="IT8-z2-PgH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Doz-wt-2bI">
@@ -227,7 +227,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="XUL-3f-k0d">
             <objects>
-                <tabBarController id="9vX-rP-Yxl" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="9vX-rP-Yxl" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="5Au-yk-BYw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bui-aE-yV5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
