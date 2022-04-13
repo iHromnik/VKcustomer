@@ -37,6 +37,9 @@
                                                 <rect key="frame" x="173.5" y="428" width="67" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <segue destination="9vX-rP-Yxl" kind="show" id="r60-y4-VTH"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,15 +77,18 @@
                             <constraint firstItem="bXv-5e-qj4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xfG-YV-b8s"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ahH-8x-fPQ"/>
                     <connections>
-                        <segue destination="9vX-rP-Yxl" kind="presentation" identifier="afterLogin" id="n20-a5-bjU"/>
+                        <outlet property="loginTextField" destination="cmJ-lc-VfB" id="YHh-Eq-zRi"/>
+                        <outlet property="passwordTextField" destination="aAY-G3-7Le" id="1nn-kt-Gjg"/>
+                        <outlet property="scrollView" destination="bXv-5e-qj4" id="9Up-YV-0Oi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
+            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Title-->
         <scene sceneID="Npf-4r-f2x">
             <objects>
                 <tableViewController id="HiJ-mr-vGw" sceneMemberID="viewController">
@@ -105,16 +111,21 @@
                             <outlet property="delegate" destination="HiJ-mr-vGw" id="2tE-E6-6M1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="bGR-xy-6Or"/>
-                    <connections>
-                        <segue destination="UJ7-XO-c9M" kind="show" id="IHH-lp-MgX"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Item" id="Wno-QU-bjl"/>
+                    <navigationItem key="navigationItem" title="Title" id="3L1-Bg-uTM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GIv-Jk-fp3">
+                            <connections>
+                                <segue destination="UJ7-XO-c9M" kind="show" id="Pbl-2x-ICf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h2t-0U-Zfz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750.7246376811595" y="-243.08035714285714"/>
+            <point key="canvasLocation" x="4660.8695652173919" y="-243.08035714285714"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Title-->
         <scene sceneID="TtN-wh-621">
             <objects>
                 <tableViewController id="ho9-zu-gcc" sceneMemberID="viewController">
@@ -137,14 +148,17 @@
                             <outlet property="delegate" destination="ho9-zu-gcc" id="P1i-ok-YVr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="AO1-fL-Ouw"/>
-                    <connections>
-                        <segue destination="7e0-ij-x66" kind="show" id="Aha-N8-Vmu"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Title" id="5qe-BB-aul">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VQb-Yx-Z9Q">
+                            <connections>
+                                <segue destination="7e0-ij-x66" kind="show" id="TiP-tT-RPC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BtB-ra-bdn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3751" y="520"/>
+            <point key="canvasLocation" x="4660.8695652173919" y="519.64285714285711"/>
         </scene>
         <!--Collection View Controller-->
         <scene sceneID="QsE-3V-z2I">
@@ -179,7 +193,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6oC-Oq-J3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4503" y="-243"/>
+            <point key="canvasLocation" x="5413.04347826087" y="-243.08035714285714"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="4QO-TI-N3f">
@@ -208,12 +222,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4r-KE-fls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4503" y="520"/>
+            <point key="canvasLocation" x="5413.04347826087" y="519.64285714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XUL-3f-k0d">
             <objects>
                 <tabBarController id="9vX-rP-Yxl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5Au-yk-BYw"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bui-aE-yV5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -226,7 +241,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJj-V6-PE6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="889" y="67"/>
+            <point key="canvasLocation" x="1798.5507246376812" y="66.964285714285708"/>
         </scene>
         <!--Item-->
         <scene sceneID="dSr-b2-YSN">
@@ -245,7 +260,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vo1-lw-2KB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2840.579710144928" y="-243.08035714285714"/>
+            <point key="canvasLocation" x="3750.7246376811595" y="-243.08035714285714"/>
         </scene>
         <!--Item-->
         <scene sceneID="wql-0o-2Oz">
@@ -264,7 +279,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uw0-hs-GqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="520"/>
+            <point key="canvasLocation" x="3750.7246376811595" y="519.64285714285711"/>
         </scene>
     </scenes>
     <resources>
